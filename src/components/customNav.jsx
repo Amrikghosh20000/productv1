@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from '../assets/logo.jpg'
+import logo from '../assets/logo.jpg';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,30 +14,9 @@ function Navbar() {
       <nav className="bg-white shadow-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-            <img
-              src={logo}
-              className="h-10"
-              alt="Flowbite Logo"
-            />
-       
+            <img src={logo} className="h-10" alt="Logo" />
           </a>
           <div className="flex items-center md:order-2 space-x-3 rtl:space-x-reverse">
-            <button
-              type="button"
-              className="flex text-sm rounded-full focus:ring-4 focus:ring-gray-300"
-              id="user-menu-button"
-              aria-expanded="false"
-              data-dropdown-toggle="user-dropdown"
-              data-dropdown-placement="bottom"
-            >
-              <span className="sr-only">Open user menu</span>
-              <img
-                className="w-8 h-8 rounded-full"
-                src="https://images-platform.99static.com//syUUBXWPuntRp-CG7bhwjByZIMg=/0x0:1080x1080/fit-in/500x500/99designs-contests-attachments/127/127807/attachment_127807231"
-                alt="user photo"
-              />
-            </button>
-
             <button
               onClick={toggleNavbar}
               type="button"
@@ -62,6 +41,11 @@ function Navbar() {
                 />
               </svg>
             </button>
+            <Link to="https://www.growwisemedia.com/contact">
+              <button className="bg-black text-white font-bold py-2 px-4 rounded-lg hover:bg-gray-800 transition duration-200">
+                Contact Us
+              </button>
+            </Link>
           </div>
           <div
             className={`items-center justify-between md:flex md:w-auto md:order-1 ${isOpen ? "block" : "hidden"}`}
@@ -78,21 +62,21 @@ function Navbar() {
               <li>
                 <Link to="color">
                   <span className="block py-2 px-3 text-black text-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0">
-                   Palettes
+                    Palettes
                   </span>
                 </Link>
               </li>
               <li>
                 <Link to="duocolor">
                   <span className="block py-2 px-3 text-black text-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0">
-                    Duo 
+                    Duo
                   </span>
                 </Link>
               </li>
               <li>
                 <Link to="tricolor">
                   <span className="block py-2 px-3 text-black text-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0">
-                    Trio 
+                    Trio
                   </span>
                 </Link>
               </li>
@@ -106,7 +90,7 @@ function Navbar() {
               <li>
                 <Link to="https://www.growwisemedia.com/web-design">
                   <span className="block py-2 px-3 text-black text-sm hover:bg-gray-100 md:hover:bg-transparent md:p-0">
-                    Portflio
+                    Portfolio
                   </span>
                 </Link>
               </li>

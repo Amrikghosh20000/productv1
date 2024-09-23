@@ -19,7 +19,7 @@ function Duocolors() {
                 }`}
               >
                 <div
-                  className="h-20 w-20 sm:h-28 sm:w-28 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl"
+                  className="h-12 w-12 sm:h-28 sm:w-28 rounded-full shadow-lg transform transition-transform duration-300 hover:scale-110 hover:shadow-2xl"
                   style={{ backgroundColor: color }}
                 ></div>
                 <p className="mt-2 text-xs sm:text-sm font-medium text-center">{color}</p>
